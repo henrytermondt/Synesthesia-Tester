@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel='stylesheet' href='styles.css'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chonburi&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div id='wrapper'>
+        <h1>Harlem Renaissance Quiz</h1>
+        <h2 id='phase'>Phase 1</h2>
+
+        <div id='color-picker'>
+            <div class='picker-wrapper'>
+                <label for='picker-1'>Song #1</label>
+                <input type='color' id='picker-1' value='#363647'>
+            </div>
+            <div class='picker-wrapper'>
+                <label for='picker-2'>Song #2</label>
+                <input type='color' id='picker-2' value='#363647'>
+            </div>
+            <div class='picker-wrapper'>
+                <label for='picker-3'>Song #3</label>
+                <input type='color' id='picker-3' value='#363647'>
+            </div>
+        </div>
+
+        <div id='button-container'>
+            <button id='submit'>Submit</button>
+            <p class='confirmation'><i>Response received!</i></p>
+            <p class='confirmation'><i>Please wait for further instructions.</i></p>
+        </div>
+    </div>
+    <div id='results-wrapper' style='display: none;'>
+        <div id='results-border'>
+            <div id='synesthetic' style='display: none;'>
+                <h1>You are likely synesthetic!</h1>
+                <div class='reason'>The colors you chose for each song in the first and second phases were very consistent.</div>
+            </div>
+            <div id='not-synesthetic' style='display: none;'>
+                <h1>You probably aren't synesthetic</h1>
+                <div id='not-reason' class='reason'>The colors you chose for each song changed significantly from the first phase to the second.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src='index.js'></script>
+</body>
+</html>

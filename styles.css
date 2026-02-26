@@ -1,0 +1,137 @@
+body {
+    background-color: #fff1ef;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+* {
+    font-family: 'Chonburi';
+}
+
+#wrapper, #results-wrapper {
+    position: absolute;
+    width: calc(80 * var(--u));
+}
+#results-wrapper {
+    transition-property: opacity;
+    transition-duration: 0.4s;
+    opacity: 0;
+}
+
+input {
+    width: calc(18 * var(--u));
+    height: calc(9 * var(--u));
+
+    cursor: pointer;
+}
+label {
+    text-align: center;
+    font-weight: bold;
+
+    margin-bottom: calc(1 * var(--u));
+    font-size: calc(2.5 * var(--u));
+
+    color: #363647;
+}
+h1 {
+    color: #ec644d;
+    text-align: center;
+    font-size: calc(4 * var(--u));
+
+    margin-bottom: 0vw;
+}
+h2 {
+    text-align: center;
+    font-size: calc(2.5 * var(--u));
+
+    font-weight: 500;
+
+    margin-top: calc(1 * var(--u));
+    margin-bottom: calc(4 * var(--u));
+    font-family: 'Poppins';
+    color: #ec644d;
+}
+
+.picker-wrapper {
+    display: flex;
+    flex-direction: column;
+}
+
+#color-picker, #results-border {
+    height: calc(20 * var(--u));
+
+    padding: 10px;
+
+    border-style: solid;
+    border-color: #363647;
+    border-width: 1px;
+    border-radius: 10px;
+
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+
+button {
+    border-style: none;
+    border-color: #64647e;
+    border-width: 1px;
+    border-radius: 10px;
+    margin-top: calc(5 * var(--u));
+    margin-bottom: calc(2 * var(--u));;
+
+    background-color: #ec644d;
+
+    color: #414153;
+
+    padding: calc(2 * var(--u));
+    font-size: calc(3 * var(--u));
+
+    cursor: pointer;
+}
+#button-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: start;
+}
+#button-container p {
+    margin: calc(0 * var(--u));
+    font-size: calc(2 * var(--u));
+    color: #eeaa9e;
+
+    transition-property: opacity;
+    transition-duration: 0.2s;
+    opacity: 0;
+}
+i {
+    font-family: 'Poppins';
+}
+
+.reason {
+    font-size: calc(2.5 * var(--u));
+    color: #ec644d;
+    text-align: center;
+    font-weight: 100;
+
+    margin-top: calc(2.5 * var(--u));
+}
+#results-wrapper h1 {
+    font-size: calc(3.5 * var(--u));
+}
+#results-border {
+    height: calc(30 * var(--u));
+}
+#results-border * {
+    position: relative;
+    top: calc(-0.5 * var(--u));
+
+    width: calc(65 * var(--u));
+}
