@@ -20,6 +20,10 @@ body {
     transition-duration: 0.4s;
     opacity: 0;
 }
+#wrapper > *, #results-wrapper > * {
+    position: relative;
+    top: calc(3.6 * var(--u));
+}
 
 input {
     width: calc(18 * var(--u));
